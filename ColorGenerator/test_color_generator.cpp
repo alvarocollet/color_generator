@@ -29,13 +29,6 @@ SOFTWARE.
 #include <iomanip>
 #include "color_generator.h"
 
-//struct RGBColor
-//{
-//    unsigned char color[3];
-//
-//    RGBColor(unsigned char r, unsigned char g, unsigned char b) : color{ r, g, b } {}
-//};
-
 int main(int argc, char *argv[])
 {
     typedef std::array<unsigned char, 3> RGBColor;
