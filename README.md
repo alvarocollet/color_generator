@@ -1,5 +1,5 @@
 # Color Generator
-Create sets of visually distinctive colors for easy visualization in plots.
+Create sets of visually distinctive colors for easy visualization in plots. The colors are generated procedurally, so you can create a large number of colors with no repetition (up to 255*7 = 1785 distinct colors). However, it is hard to notice the actual differences between colors past the first 15-20 colors.
 
 This is a self-contained, header-only library (only dependent on STL vectors). This code is based on a stack overflow discussion available [here](http://stackoverflow.com/questions/309149/generate-distinctly-different-rgb-colors-in-graphs).
 
@@ -16,4 +16,9 @@ Then, to access your generated colors:
 RGBColor c = colorGenerator[idx]; // Color number 'idx', returns object of type 'RGBColor'
 ```
 
+Or, alternatively, you query an arbitrariy (not precomputed) color:
+
+```
+RGBColor c;
+colorGenerator.GenerateColor(idx /* index of color */, c /* output, passed by ref */);
 Enjoy!
