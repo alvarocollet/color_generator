@@ -21,4 +21,5 @@ Or, alternatively, you query an arbitrariy (not precomputed) color:
 ```
 RGBColor c;
 colorGenerator.GenerateColor(idx /* index of color */, c /* output, passed by ref */);
+```
 Enjoy!
